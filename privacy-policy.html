@@ -1,0 +1,79 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Kurbi Privacy Policy</title><style>body{font-family:-apple-system,Georgia,serif;max-width:720px;margin:40px auto;padding:0 20px;color:#0D1526;line-height:1.6}
+h1{font-size:1.6em}h2{font-size:1.2em;margin-top:1.6em}
+.draft{background:#FFF6E5;border:1px solid #E6C988;padding:10px 14px;border-radius:8px;font-size:.9em;margin-bottom:24px}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid #ddd;font-size:.85em;color:#667}</style></head><body>
+<div class="draft">Draft pending final legal review. Questions: support@kurbi.app</div>
+<br>
+<hr>
+<br>
+<h1>Kurbi — Privacy Policy OUTLINE (structure + required content, not final prose)</h1>
+<br>
+<p><strong>Version:</strong> 0.1-outline • For: [Kurbi, LLC], Florida • Scope: iOS app, web, AI phone line.</p>
+<p></p>
+<br>
+<h2>1. Who we are / scope</h2>
+<p>- Controller: [Kurbi, LLC], [address], [privacy contact email].</p>
+<p>- Covers: Kurbi app, website, AI phone line, provider tools. Does NOT cover providers&#x27; own independent processing of customer data once a booking connects them (providers are independent controllers of what customers give them directly) — state this plainly. </p>
+<br>
+<h2>2. Data we collect</h2>
+<p>- <strong>Account:</strong> name, email, phone, password hash, role (customer/provider), profile photo.</p>
+<p>- <strong>Provider business data:</strong> business name, categories, prices, license/permit uploads, insurance certificates (insurer, policy no., limits, expiry), payout status flags from Stripe.</p>
+<p>- <strong>Booking data:</strong> service type, date/time, price, notes, messages between customer and provider, dispute-center submissions and evidence uploads.</p>
+<p>- <strong>Location:</strong></p>
+<p>  - Customer <strong>service address</strong> — collected for bookings; <strong>shared only with the provider the customer actually books</strong> (not with browsing providers; approximate area only pre-booking). [Confirm product behavior matches before publishing.]</p>
+<p>  - Provider <strong>en-route location sharing</strong> — <strong>opt-in per session</strong>, provider toggles it when departing; stops at arrival/completion; not collected in the background outside an active share. </p>
+<p>- <strong>AI phone line:</strong> call audio recordings, transcripts, caller ID, booking intents extracted by the assistant.</p>
+<p>  - Consent: disclosure at call start; <strong>all-party-consent states — Florida is one — require consent before recording</strong>; describe the consent mechanism (continued participation after disclosure / IVR prompt). </p>
+<p>- <strong>Payments:</strong> processed by <strong>Stripe</strong>; Kurbi does not collect or store full card numbers; Kurbi sees tokens, last4, transaction metadata. Stripe acts under its own privacy policy (link).</p>
+<p>- <strong>Photos/media:</strong> profile photos, portfolio images, before/after shots, dispute evidence.</p>
+<p>- <strong>Device &amp; analytics:</strong> device identifiers, app version, crash logs, usage analytics [name the SDKs when chosen], IP addresses (including IP captured at ToS acceptance for record-keeping).</p>
+<br>
+<h2>3. How we use data</h2>
+<p>- Operate the marketplace (matching, booking, scheduling, payments via Stripe).</p>
+<p>- Run the AI phone line (answer calls, create bookings, quality and accuracy review of the automated assistant). State whether recordings/transcripts are used to improve/tune the AI system and whether vendors may use them — see §4. </p>
+<p>- Trust &amp; integrity: fraud prevention, dispute facilitation, badge verification, enforcing terms.</p>
+<p>- Communications: booking notifications, service messages; marketing only with consent/opt-out.</p>
+<p>- Legal compliance, record-keeping (ToS acceptance logs), safety.</p>
+<br>
+<h2>4. Sharing</h2>
+<p>- <strong>Between users:</strong> customer name, service address, phone/masked contact, and booking details → to the booked provider; provider profile, prices, ratings → to customers. (No sale of personal data.)</p>
+<p>- <strong>Processors/subprocessors (name them):</strong></p>
+<p>  - <strong>Stripe</strong> — payments, identity/payout verification, 1099-K reporting.</p>
+<p>  - <strong>Hosting/backend</strong> — [AWS / Supabase / etc. — fill in actual].</p>
+<p>  - <strong>Voice AI stack</strong> — [ElevenLabs and/or VAPI, telephony carrier e.g., Twilio] for call handling, speech synthesis, transcription. </p>
+<p>  - Analytics/crash [fill in actual].</p>
+<p>- Legal/safety disclosures; corporate transactions.</p>
+<p>- State explicitly: <strong>Kurbi does not sell personal information and does not share it for cross-context behavioral advertising</strong> [confirm true — if ad SDKs are ever added this line and CPRA posture change].</p>
+<br>
+<h2>5. Retention</h2>
+<p>- Account data: life of account + [X] after closure.</p>
+<p>- Booking/transaction records: [7 years — tax/audit alignment; ATTORNEY to confirm].</p>
+<p>- Call recordings: [e.g., 90 days] / transcripts: [e.g., 24 months] — pick operational minimums deliberately; shorter is defensible. </p>
+<p>- ToS/Provider-Agreement acceptance logs (version, timestamp, IP): retain at least as long as the account + limitations period — these are enforceability evidence. See app-checklist §8.</p>
+<p>- Dispute evidence: [duration tied to chargeback windows + limitations period].</p>
+<br>
+<h2>6. Your rights / choices</h2>
+<p>- Access, correction, deletion, portability requests — in-app + email channel; identity verification; response window.</p>
+<p>- <strong>CCPA/CPRA and other state comprehensive laws</strong> (VA, CO, CT, UT, TX, OR, FL&#x27;s FDBR, etc.): Kurbi is <strong>likely below applicability thresholds at launch</strong> (revenue / volume of consumers), <strong>but draft rights handling to those standards anyway</strong> so growth doesn&#x27;t require a policy rewrite. </p>
+<p>- Location permissions, marketing opt-out, push-notification settings.</p>
+<p>- Note: deletion requests may not reach data the provider independently retains (independent-controller point from §1).</p>
+<br>
+<h2>7. Children</h2>
+<p>- Platform is <strong>not directed to minors</strong>; minimum age <strong>[17+/18 — align with ToS §2 and App Store rating]</strong>; no knowing collection from children under 13 (COPPA floor); deletion on discovery.</p>
+<br>
+<h2>8. Security</h2>
+<p>- Transport encryption, encryption at rest [confirm], access controls, processor vetting, incident response; no absolute guarantee language.</p>
+<p>- Breach notification per applicable law. </p>
+<br>
+<h2>9. Contact</h2>
+<p>- Privacy contact: [privacy@kurbi… email], postal address, response SLA.</p>
+<br>
+<h2>10. Versioning / changes</h2>
+<p>- Version number + effective date on the policy; changelog kept.</p>
+<p>- Material changes: in-app notice + [re-acceptance or prominent notice — match the ToS §13 mechanism].</p>
+<br>
+<hr>
+<p>*End of outline. Nothing here is legal advice.*</p>
+<footer>Kurbi · support@kurbi.app · This page is versioned; material changes are re-presented in the app for acceptance.</footer>
+</body></html>
